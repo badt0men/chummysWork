@@ -1,0 +1,142 @@
+@import 'variables';
+
+body {
+    background-color: $bgdefault;
+}
+
+.navbg {
+    height : 90px;
+    background-color: $navbg;
+    background: $body-bg;  /* fallback for old browsers */
+    background: $nav-gradient;  /* Chrome 10-25, Safari 5.1-6 */
+    background: $nav-gradient2; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbg-footer {
+    background-color: $navbg;
+    background: $body-bg;  /* fallback for old browsers */
+    background: $nav-gradient;  /* Chrome 10-25, Safari 5.1-6 */
+    background: $nav-gradient2; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $white;
+    padding:5px;
+}
+
+.navbtn{
+    color: $white;
+    background-color: unset;
+    margin-left: 5px;
+    font-size: 13px;
+    border: unset;
+    text-transform: uppercase;
+}
+.navbtn:hover{
+    background-color: $hover-red;
+    color: $white;
+    border-color: none;
+}
+
+.navbtn:active{
+    background-color: $grad-bg;
+    color: $dark-text;
+}
+.alt-btn{
+    color: $white;
+    background: $grad-bg;
+    margin-left: 5px;
+    font-size: 13px;
+    border: unset;
+    text-transform: uppercase;
+}
+
+.alert-mine{
+    color: $green !important;
+    background-color: unset;
+    text-align: center;
+}
+
+
+.active{
+    background-color: $grad-bg;
+    border: 0px;
+}
+.card{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    //box-shadow: 2px 2px 4px #00000026;
+    box-shadow: 0 5px 28.5px 1.5px rgb(149 152 200 / 20%);
+}
+.yel-bg{
+    background-color: $yel-bg !important;
+}
+.alt-bg{
+    background-color: $alt-bg !important;
+}
+.rounded-img{
+    border-radius: $rounded;
+    -webkit-border-radius: $rounded;
+    -moz-border-radius: $rounded;
+    -ms-border-radius: $rounded;
+    -o-border-radius: $rounded;
+}
+.jumbo{
+    color: $white;
+    text-align: center;
+    padding: 35px;
+    border-radius: 20px;
+    font-weight: bold;
+    background: $body-bg;  /* fallback for old browsers */
+    background: $nav-gradient;  /* Chrome 10-25, Safari 5.1-6 */
+    background: $nav-gradient2; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jumbo-content{
+    color: $white;
+    text-align: center;
+}
+
+.logo{
+    width: $logo-w;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.nav-link {
+    color: $white;
+    font-weight: bold;
+}
+.mg-20{
+    margin-top: $mg-20;
+    margin-bottom: $mg-20;
+}
+
+.navbar-toggler-icon {
+    background-color: $yel-bg;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px){
+    .nav-w{
+        width: $nav-w;
+    }
+}
+
+@media screen and (max-width:768px){
+    .mg-bottom{
+        margin-bottom: $mg-bottom !important; 
+    }
+    .navbar-collapse {
+        background-color: $yel-bg;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+}
